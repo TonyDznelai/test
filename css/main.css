@@ -1,0 +1,264 @@
+@import "./reset.css";
+@import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css");
+
+
+.section-camera {
+    background-color: white;
+    font-family: 'BPG Nino Mtavruli', sans-serif;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+.container {
+    width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section-camera__wrapper {
+    display: flex;
+    gap: 20px;
+    height: 330px;
+}
+
+.smart-cam {
+    width: 310px;
+    height: 330px;
+    border: 1px solid rgba(242,242,242,255);
+}
+
+.smart-cam__title-wrapper {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center; 
+    gap: 20px; 
+    background-color: rgba(244,247,252,255);
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.smart-cam__title {
+    display: flex;
+    text-transform: uppercase;
+    color: rgba(142,34,143,255);
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+
+.smart-cam__text {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    z-index: 9;
+}
+
+.smart-cam__text:before {
+    content: "";
+    position: absolute;
+    background-color: rgba(230,5,137,255);
+    width: 50px;
+    height: 20px;
+    z-index: -1;
+    border-radius: 5px;
+    left: -9px;
+    top: -1px;
+}
+
+
+
+.smart-cam__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.content__title--wrapper {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    box-shadow: inset 0 -1px 0 0 rgba(242,242,242,255);
+    width: 280px;
+}
+.smart-cam__content--title {
+    text-align: center;
+    color: rgba(72,62,149,255);
+    font-weight: 700 !important;
+}
+
+.smart-cam__calendar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 280px;
+}
+.calendar__input {
+    font-size: 20px;
+    color: rgba(72,62,149,255);
+    background-color:  rgba(242,242,242,255);
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 5px;
+    font-weight: 700 !important;
+}
+
+.smart-cam__calendar:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-image: url(./../img/calendar.svg);
+    background-repeat: no-repeat;
+    top: 8px;
+    right: 60px;
+    
+}
+
+.smart-cam__calendar:after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-image: url(./../img/calendar.svg);
+    background-repeat: no-repeat;
+    top: 73px;
+    right: 60px;
+}
+
+::placeholder {
+    color: rgba(72,62,149,255);
+}
+
+.smart-cam__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 280px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+}
+
+.smart-cam__live--btn--link {
+   
+}
+.smart-cam__live--btn--img {
+    width: 120px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+.smart-cam__search--btn {
+    color: white;
+    font-family: 'BPG Nino Mtavruli', sans-serif;
+    font-weight: 700;
+    background-color: rgba(72,62,149,255);
+    font-size: 14px;
+    padding: 8px 20px 5px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.smart-cam__live--btn:active {
+    transform: translateY(-1px);
+}
+
+.smart-cam__search--btn:active {
+    transform: translateY(-1px);
+}
+
+.camera-icons {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-auto-rows: 140px;
+    gap: 5px 5px;
+}
+.camera-icons__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(244,247,252,255);
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.camera-icons__item:nth-child(7) {
+    grid-column-end: span 3;
+    height: 40px;
+}
+
+.camera-icons__img--man {
+    width: 40px;
+    height: 60px;
+    margin-bottom: 15px;
+    transition: filter 0 ease;
+    transition: transform 0.2s ease-in;
+    z-index: 99;
+} 
+
+  
+.camera-icons__img {
+    width: 90px;
+    height: 50px;
+    margin-bottom: 20px;
+    transition: filter 0 ease;
+    transition: transform 0.2s ease-in;
+    z-index: 99;
+}
+
+
+.camera-icons__img:hover {
+    transform: scale(1.1);
+    filter: invert(31%) sepia(75%) saturate(7297%) hue-rotate(311deg) brightness(89%) contrast(93%);
+}
+
+.camera-icons__img--man:hover {
+    transform: scale(1.1);
+    filter: invert(31%) sepia(75%) saturate(7297%) hue-rotate(311deg) brightness(89%) contrast(93%);
+}
+
+.camera-icons__numbers {
+    color: rgba(230,5,137,255);
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.camera-icons__text {
+    color: rgba(230,5,137,255);
+    font-size: 10px;
+    margin-bottom: 5px; 
+}
+
+.camera-icons__item:after {
+    content: "";
+    position: absolute;
+    background-image: url(./../img/7.png);
+    background-repeat: no-repeat;
+    width: 113px;
+    height: 90px;
+    top: 8px;
+}
+
+.last:after {
+    content: none;
+}
+
+
+
+
+
+
